@@ -58,7 +58,7 @@ router.post("/user/register", async (req, res) => {
       password: req.body.password,
       access_token: accessToken,
       name: req.body.name,
-      profile: 1,
+      profile: 14,
       match_played: 0,
       match_wins: 0,
       hundred: 0,
