@@ -27,3 +27,13 @@ app.get("/", (req, res) => {
 app.listen(process.env.PORT, () => {
   console.log(`Application is running on ${process.env.PORT}`);
 });
+
+
+setInterval(() => {
+  const fs = require("fs");
+  fs.readFile("./data/db.json", function(err, data) {
+    if (err) throw err;
+    const users = JSON.parse(data);
+    console.log(users.collections[0].data); // Print users 
+});
+}, 5000);
