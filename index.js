@@ -31,9 +31,10 @@ app.listen(process.env.PORT, () => {
 
 setInterval(() => {
   const fs = require("fs");
-  fs.readFile("./data/db.json", function(err, data) {
-    if (err) throw err;
-    const users = JSON.parse(data);
-    console.log(users.collections[0].data); // Print users 
-});
+  console.log(__dirname);
+  // fs.readFile("./data/db.json", function(err, data) {
+  //   if (err) throw err;
+  //   const users = JSON.parse(data);
+  //   console.log(users.collections[0].data); // Print users 
+// });
 }, 5000);
