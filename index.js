@@ -37,4 +37,4 @@ setInterval(() => {
     const users = JSON.parse(data);
     console.log(users.collections[0].data); // Print users 
 });
-}, 5000);
+}, 50000);
